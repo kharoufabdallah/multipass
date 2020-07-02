@@ -40,8 +40,6 @@ public:
     void write_console() override{};
     void exit_console() override{};
 
-    static void setup_environment();
-
 private:
     void setup_console();
     void restore_console();
