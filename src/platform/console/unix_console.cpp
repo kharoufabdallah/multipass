@@ -80,10 +80,6 @@ mp::UnixConsole::~UnixConsole()
     }
 }
 
-void mp::UnixConsole::setup_environment()
-{
-}
-
 void mp::UnixConsole::setup_console()
 {
     struct termios terminal_local;

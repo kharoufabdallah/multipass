@@ -33,7 +33,6 @@ int main_impl(int argc, char* argv[])
     QCoreApplication app(argc, argv);
     QCoreApplication::setApplicationName(mp::client_name);
 
-    mp::Console::setup_environment();
     auto term = mp::Terminal::make_terminal();
 
     mp::ClientConfig config{mp::client::get_server_address(), mp::RpcConnectionType::ssl,
